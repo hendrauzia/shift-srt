@@ -30,6 +30,6 @@ Features
 Features are currently restricted only to shift timing of a subtitle globally.
 
     bin/shift-srt sample.srt +1ms
-    bin/shift-srt sample.srt +2.3s
+    bin/shift-srt sample.srt -2.3s
     bin/shift-srt sample.srt +4.5m
-    bin/shift-srt sample.srt +6.7h
+    bin/shift-srt sample.srt -6.7h
