@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'bundler/setup'
+
+Bundler.require :default
+
+file = ARGV[0]
+time = ARGV[1]
+
+srt  = SRT::File.parse File.open file
+srt.timeshift all: time
+
+File.open(file, 'w') { |f| f.write srt.to_s }
